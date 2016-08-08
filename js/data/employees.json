@@ -1,0 +1,38 @@
+{
+   "employees" : [ {
+      "empId" : 100,
+ "firstName" : "Pizzeria Augusto",
+ 
+ "title" : "Juan B. Justo 1300",
+ "phone" : "tel 463-5663" }, {
+  "empId" : 101,
+  "firstName" : "Restaurant Carlitos",
+
+      "title" : "Bogota 300", "phone" : "tel. 4883-2828" }, {
+      "empId" : 103,
+      "firstName" : "La Mejor Pizza",
+
+      "title" : "Bonorino 4050",
+   "phone" : "tel 4536-7899"},{
+      "empId" : 104,
+      "firstName" : "Papa Fritas Show",
+
+      "title" : "Florida 400",
+   "phone" : "tel 4674-8383"},{
+      "empId" : 105,
+      "firstName" : "TGI Fridays",
+
+      "title" : "Cucha Cucha 200",
+   "phone" : "tel 4876-7769"},{
+      "empId" : 106,
+      "firstName" : "Mc Donalds",
+
+      "title" : "Av. Rivadavia 4280",
+   "phone" : "tel 4965-3240"},{
+      "empId" : 107,
+      "firstName" : "Parrilla Caballito",
+
+      "title" : "Otamendi 220",
+   "phone" : "tel 4958-8154"} ]
+}
+

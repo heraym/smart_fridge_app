@@ -1,0 +1,298 @@
+<div class="oj-flex oj-flex-items-pad" style="background-color: white" >
+
+<table><tr><td rowspan="3"><image src="css/images/heladeras/dashboard2.png" style="height:400px;width:250px"/></td><td><div id="varios" tabindex="0" aria-label="Varios" class="oj-flex-items">
+ <div style=
+        "margin-left:auto;
+        margin-right:auto;
+        text-align: center;
+        font-size:11px;">
+    <b> Freezer</b>
+  </div>
+  <div id="gauge1" data-bind="ojComponent: {
+       component: 'ojStatusMeterGauge', 
+       min: 0, 
+       max: 1000000, 
+       value: 200000,  
+       innerRadius:.85, step:1,
+       orientation: 'circular', 
+       thresholds: thresholdValues,
+       plotArea: {rendered: 'on'},
+       metricLabel:{rendered:'off'},
+       center: {template: 'tempext'},
+       readOnly: false
+       }" 
+       style=
+       "margin-left:auto;
+       margin-right:auto;
+       width:100px;
+       height:100px;">
+  </div>
+<script type="text/html" id="tempext">
+     <div data-bind="style: {
+            position: 'absolute',
+            width: innerBounds.width + 'px',
+            height: innerBounds.width+ 'px',
+            top: innerBounds.y + 'px',
+            left: innerBounds.x + 'px',
+            textAlign:'center',
+            pointerEvents: 'none'}">
+       <div data-bind="style: {
+              backgroundImage: 'url(\'css/images/heladeras/7_icon_4.png\')',
+              marginLeft: 'auto',
+              marginRight: 'auto',
+              backgroundSize: 'cover',
+              borderRadius: '20%',
+              width: '40px',
+              height: '40px'}"/>
+       <div style='margin-top:5px'><b>
+         <span style='font-size:11px' data-bind="text: '30 C'"/>
+         
+       </div>
+    </div>
+  </script>  
+</td><td>
+
+<div id="varios" tabindex="0" aria-label="Varios">
+ <div style=
+        "margin-left:auto;
+        margin-right:auto;
+        text-align: center;
+        font-size:11px;">
+    <b>Carnes</b>
+  </div>
+  <div id="gauge2" data-bind="ojComponent: {
+       component: 'ojStatusMeterGauge', 
+       min: 0, 
+       max: 1000000, 
+       value: 200000,  
+       innerRadius:.85, step:1,
+       orientation: 'circular', 
+       thresholds: thresholdValues,
+       plotArea: {rendered: 'on'},
+       metricLabel:{rendered:'off'},
+       center: {template: 'tempcarne'},
+       readOnly: false
+       }" 
+       style=
+       "margin-left:auto;
+       margin-right:auto;
+       width:100px;
+       height:100px;">
+  </div>
+<script type="text/html" id="tempcarne">
+     <div data-bind="style: {
+            position: 'absolute',
+            width: innerBounds.width + 'px',
+            height: innerBounds.width+ 'px',
+            top: innerBounds.y + 'px',
+            left: innerBounds.x + 'px',
+            textAlign:'center',
+            pointerEvents: 'none'}">
+       <div data-bind="style: {
+              backgroundImage: 'url(\'css/images/heladeras/6_icon_3.png\')',
+              marginLeft: 'auto',
+              marginRight: 'auto',
+              backgroundSize: 'cover',
+              borderRadius: '20%',
+              width: '40px',
+              height: '40px'}"/>
+       <div style='margin-top:5px'><b>
+         <span style='font-size:11px' data-bind="text: '30 C'"/>
+
+       </div>
+    </div>
+  </script> 
+</td><td>
+<div id="varios" tabindex="0" aria-label="Varios">
+ <div style=
+        "margin-left:auto;
+        margin-right:auto;
+        text-align: center;
+        font-size:11px;">
+    <b>Verduras</b>
+  </div>
+  <div id="gauge2" data-bind="ojComponent: {
+       component: 'ojStatusMeterGauge', 
+       min: 0, 
+       max: 1000000, 
+       value: 200000,  
+       innerRadius:.85, step:1,
+       orientation: 'circular', 
+       thresholds: thresholdValues,
+       plotArea: {rendered: 'on'},
+       metricLabel:{rendered:'off'},
+       center: {template: 'tempverd'},
+       readOnly: false
+       }" 
+       style=
+       "margin-left:auto;
+       margin-right:auto;
+       width:100px;
+       height:100px;">
+  </div>
+<script type="text/html" id="tempverd">
+     <div data-bind="style: {
+            position: 'absolute',
+            width: innerBounds.width + 'px',
+            height: innerBounds.width+ 'px',
+            top: innerBounds.y + 'px',
+            left: innerBounds.x + 'px',
+            textAlign:'center',
+            pointerEvents: 'none'}">
+       <div data-bind="style: {
+              backgroundImage: 'url(\'css/images/heladeras/6_icon_4.png\')',
+              marginLeft: 'auto',
+              marginRight: 'auto',
+              backgroundSize: 'cover',
+              borderRadius: '20%',
+              width: '40px',
+              height: '40px'}"/>
+       <div style='margin-top:5px'><b>
+         <span style='font-size:11px' data-bind="text: '30 C'"/>
+         </div>
+    </div>
+  </script> 
+</td><td>
+<div id="varios" tabindex="0" aria-label="Varios">
+ <div style=
+        "margin-left:auto;
+        margin-right:auto;
+        text-align: center;
+        font-size:11px;">
+    <b> Humedad</b>
+  </div>
+  <div id="gauge2" data-bind="ojComponent: {
+       component: 'ojStatusMeterGauge', 
+       min: 0, 
+       max: 1000000, 
+       value: 200000,  
+       innerRadius:.85, step:1,
+       orientation: 'circular', 
+       thresholds: thresholdValues,
+       plotArea: {rendered: 'on'},
+       metricLabel:{rendered:'off'},
+       center: {template: 'humedad'},
+       readOnly: false
+       }" 
+       style=
+       "margin-left:auto;
+       margin-right:auto;
+       width:100px;
+       height:100px;">
+  </div>
+<script type="text/html" id="humedad">
+     <div data-bind="style: {
+            position: 'absolute',
+            width: innerBounds.width + 'px',
+            height: innerBounds.width+ 'px',
+            top: innerBounds.y + 'px',
+            left: innerBounds.x + 'px',
+            textAlign:'center',
+            pointerEvents: 'none'}">
+       <div data-bind="style: {
+              backgroundImage: 'url(\'css/images/heladeras/lista-6.jpg\')',
+              marginLeft: 'auto',
+              marginRight: 'auto',
+              backgroundSize: 'cover',
+              borderRadius: '20%',
+              width: '40px',
+              height: '40px'}"/>
+       <div style='margin-top:5px'> 
+         <span style='font-size:11px' data-bind="text: '80 %'"/>
+          
+       </div>
+     </div>
+  </script>
+</td><td>
+<div id="varios" tabindex="0" aria-label="Varios">
+ <div style=
+        "margin-left:auto;
+        margin-right:auto;
+        text-align: center;
+        font-size:11px;">
+    <b>Consumo</b>
+  </div>
+  <div id="gauge2" data-bind="ojComponent: {
+       component: 'ojStatusMeterGauge', 
+       min: 0, 
+       max: 1000000, 
+       value: 200000,  
+       innerRadius:.85, step:1,
+       orientation: 'circular', 
+       thresholds: thresholdValues,
+       plotArea: {rendered: 'on'},
+       metricLabel:{rendered:'off'},
+       center: {template: 'consumo'},
+       readOnly: false
+       }" 
+       style=
+       "margin-left:auto;
+       margin-right:auto;
+       width:100px;
+       height:100px;">
+  </div>
+<script type="text/html" id="consumo">
+     <div data-bind="style: {
+            position: 'absolute',
+            width: innerBounds.width + 'px',
+            height: innerBounds.width+ 'px',
+            top: innerBounds.y + 'px',
+            left: innerBounds.x + 'px',
+            textAlign:'center',
+            pointerEvents: 'none'}">
+       <div data-bind="style: {
+              backgroundImage: 'url(\'css/images/heladeras/lista-2.jpg\')',
+              marginLeft: 'auto',
+              marginRight: 'auto',
+              backgroundSize: 'cover',
+              borderRadius: '20%',
+              width: '40px',
+              height: '40px'}"/>
+       <div style='margin-top:5px'><b>
+         <span style='font-size:11px' data-bind="text: '350 kwh'"/>
+          
+       </div>
+    </div>
+  </script>
+</td></td></tr><tr>
+<td colspan="4">
+<div id="varios" tabindex="0" aria-label="Varios">
+<div style="float:left;line-height:80px;width:400px;font-weight:bold;padding-left:16px">
+        Consumo mensual
+    </div>
+    <div id="sparkChart4" title="Line Spark Chart<br>First Value: 5<br>Last Value: 2<br>Low Value: 0<br>High Value: 9" data-bind="ojComponent: {
+            component: 'ojSparkChart',
+            type: 'lineWithArea',
+            lineWidth: 2,
+            lineStyle: 'solid',
+            lineType: 'curved',
+            markerSize: 8,
+            markerShape: 'circle',
+            color: color,
+            firstColor: firstColor,
+            lastColor: lastColor,
+            highColor: highColor,
+            lowColor: lowColor,
+            items: sparkValues
+        }"
+         style="max-width:560px;width:400px;height:200px;float:left;">
+    </div>
+</div>
+</td></tr>
+<tr><td colspan="4">
+<div id='buttons-container'>
+    <div id="drinkset" 
+         data-bind="ojComponent: {component: 'ojButtonset', checked: 'normal'}"
+         aria-label="Seleccionar modo.">
+        <!-- ko foreach: modoRadios -->
+            <label data-bind="attr: {for: id}"></label>                               
+            <input type="radio" name="modo" 
+                   data-bind="value: id, attr: {id: id}, 
+                              ojComponent: { component: 'ojButton', label: label }"/>
+        <!-- /ko -->
+    </div>
+
+
+</div>
+</div>
+</td></tr></table>

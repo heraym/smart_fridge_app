@@ -1,0 +1,145 @@
+<!--
+ Copyright (c) 2014, 2016, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+ -->
+<div class="justifyCenter">
+    <div id="masonryLayout" data-bind="ojComponent: {component: 'ojMasonryLayout'}">
+        <div id="templateList" data-bind="template: 'dashboardContent'"></div>
+    </div>
+</div>
+
+<!-- this is the template content that is loaded by the MasonryLayout component above  -->
+<script type="text/html" id="dashboardContent">
+
+<table><tr><td colspan="2"> 
+<!-- Performance tile 1x1 -->
+
+      <!-- My Schedule tile 1x1 -->
+    
+    
+ 
+   
+    <div id="AveragePerformance" tabindex="0" aria-label="Problemas"  class="oj-masonrylayout-tile-2x1">
+        <div class="oj-flex oj-sm-justify-content-center oj-md-justify-content-center oj-lg-justify-content-center notifynews">Jueves, Julio 7, 2016</div>
+        <h2 class="oj-flex oj-flex-items-pad notifytitle">
+           Heladera Neo Frost Combi 320 L
+        </h2>
+        <div id='gauge-container'>
+        <div style="text-align:center;font-weight:bold;">
+        <div style="width:75px;float:left;">
+            <div id="gauge1" 
+                 data-bind="ojComponent: {
+		  component: 'ojRatingGauge', 
+		  value:ratingValue1, 
+		  orientation: 'vertical',
+		  readOnly: false,
+		  changedState:{shape: 'rectangle'},
+		  selectedState:{shape: 'rectangle'},
+		  hoverState:{shape: 'rectangle', color: '#cccccc'},
+		  unselectedState:{shape: 'dot'},
+		  thresholds: thresholdValues,
+		  optionChange: optionChangeAction
+		 }" 
+                 style="width:100%;height:120px;">
+            </div>
+            <div>
+                <label> Freezer </label>
+            </div>
+        </div>
+        <div style="width:70px;float:left;">
+            <div id="gauge2" 
+                 data-bind="ojComponent: {
+		  component: 'ojRatingGauge', 
+		  value:ratingValue2, 
+		  orientation: 'vertical',
+		  readOnly: false,
+		  changedState:{shape: 'rectangle'},
+		  selectedState:{shape: 'rectangle'},
+		  hoverState:{shape: 'rectangle', color: '#cccccc'},
+		  unselectedState:{shape: 'dot'},
+		  thresholds: thresholdValues,
+		  optionChange: optionChangeAction
+		 }" 
+                 style="width:100%;height:120px;">
+            </div>
+            <div>
+                <label> Verduras </label>
+            </div>
+        </div>
+        <div style="width:80px;float:left;">
+            <div id="gauge3" 
+                 data-bind="ojComponent: {
+		  component: 'ojRatingGauge', 
+		  value:ratingValue3, 
+		  orientation: 'vertical',
+		  readOnly: false,
+		  changedState:{shape: 'rectangle'},
+		  selectedState:{shape: 'rectangle'},
+		  hoverState:{shape: 'rectangle', color: '#cccccc'},
+		  unselectedState:{shape: 'dot'},
+		  thresholds: thresholdValues,
+		  optionChange: optionChangeAction
+		 }" 
+                 style="width:100%;height:120px;">
+            </div>
+            <div>
+                <label> Carne </label>
+            </div>
+        </div>
+        <div style="width:80px;float:left;">
+            <div id="gauge4" 
+                 data-bind="ojComponent: {
+		  component: 'ojRatingGauge', 
+		  value:ratingValue4, 
+		  orientation: 'vertical',
+		  readOnly: false,
+		  changedState:{shape: 'rectangle'},
+		  selectedState:{shape: 'rectangle'},
+		  hoverState:{shape: 'rectangle', color: '#cccccc'},
+		  unselectedState:{shape: 'dot'},
+		  thresholds: thresholdValues,
+		  optionChange: optionChangeAction
+		 }" 
+                 style="width:100%;height:120px;">
+            </div>
+            <div>
+                <label> Motor </label>
+            </div>
+        </div>
+        <div style="width:115px;float:left;">
+            <div id='gauge5' 
+                 data-bind="ojComponent: {
+		  component: 'ojRatingGauge', 
+		  value:ratingValue5, 
+                  thresholds: thresholdValues,
+		  orientation: 'vertical'
+		 }" 
+                 style="width:100%;height:120px;">
+            </div>
+            <div>
+                <label> Consumo </label>
+            </div>
+        </div>
+    </div>
+    <div style="clear:both"/>
+</div>
+    </div>
+ 
+</td><td rowspan="3"><div id="AveragePerformance" tabindex="0" aria-label="Problemas" class="oj-masonrylayout-tile-1x1">
+    <div class="oj-flex oj-sm-justify-content-center oj-md-justify-content-center oj-lg-justify-content-center notifynews">Puerta</div>
+     <div id="puertatexto" style="background-color : white" class="oj-flex oj-flex-items-pad notifytitle">La puerta esta cerrada 
+    </div><img id="puerta" src="css/images/heladeras/cerrada.png"/>
+     
+</div>
+</td></tr>
+<tr><td colspan="2">   
+<div id="MyActivities" tabindex="0" aria-label="Video">
+<h2 class="oj-flex oj-flex-items-pad notifytitle">Receta del dia</h2>
+<video width="500px"  controls>
+  <source src="css/videos/ATMA1.mp4" type="video/mp4">
+</video>
+</div>
+</td></tr>
+</table>
+
+</script>
